@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- v. 20. 2019-10-04 EM  -->
+<!-- v. 20.1 2020-07-09 EM 
+changes: Added @evidence to date
+         Added translation and apparatus <div>s
+         changed "fake" to "modern" in history <rs>
+          -->
+<!-- v. 20.3 2020-10-13 EM 
+changes: correct handling of provenance information
+          -->
+          <?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>NY.NY.MMA.L.96.9.222aAndb</title>
+            </titleStmt>
+
+            <publicationStmt>
+                <authority>Brown University</authority>
+                <idno type="USEpigraphy" xml:id="NY.NY.MMA.L.96.9.222aAndb">NY.NY.MMA.L.96.9.222aAndb</idno>
+            </publicationStmt>
+
+            <sourceDesc>
+                <!--  *************************************  <msDesc>  ********************************* -->
+                <msDesc>
+                    <msIdentifier>
+                        <region>NY</region>
+                        <settlement>NY</settlement>
+                        <institution>MMA</institution>
+                        <repository></repository>
+                        <idno>96.9.222a,b</idno>
+                    </msIdentifier>
+
+                    <!--  *************************************  <msContents>  *********************************    -->
+                    <msContents>
+                        <textLang mainLang="lat" otherLangs=""/>
+                        <!-- arc, grc, he, lat, und (unknown),  zxx (non-linguistic content) -->
+                        <msItem class="#funerary.epitaph">
+                            <!-- short summary of the content of an inscription -->
+                            <p>cinerary chest with an epitaph of Lucius Gavius Clemens</p>
+                        </msItem>
+                    </msContents>
+
+                    <!--  *************************************  <physDesc>  ********************************* -->
+                    <physDesc>
+
+                        <!--  *************************************  <objectDesc>  *********************************  -->
+
+                        <objectDesc ana="#ash_urn">
+                            <supportDesc ana="#stone.marble">
+                                <support>
+                                    <p> marble cinerary chest</p>
+                                    <dimensions type="surface" unit="cm">
+                                        <height>36.4</height>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                                <condition ana="#complete">
+                                    <p/>
+                                </condition>
+                            </supportDesc>
+                            <!--  *************************************  <layoutDesc>  ********************************* -->
+                            <layoutDesc>
+                                <layout columns="0" writtenLines="2">
+                                    <p/>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <!--  *************************************  <handDesc>  ********************************* -->
+
+                        <handDesc hands="1">
+                            <handNote ana="#impressed.inscribed"> </handNote>
+                        </handDesc>
+
+                        <!--  *************************************  <decoDesc>  *********************************     -->
+                        <decoDesc>
+                            <decoNote>
+                                <p/>
+                            </decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <!--  *************************************  <history>  *********************************  -->
+
+                    <history>
+
+                        <summary>
+                            <rs/>  <!-- content can be "modern" or blank -->
+                        </summary>
+
+                        <origin>
+                            <date evidence="#unspecified" notBefore="0019" notAfter="0031">ca. 20-30
+                                CE</date>
+                            <placeName ref="europe.italy.clusium">Clusium (Chiusi, Italy)</placeName>
+                        </origin>
+                        <provenance type="transferred" subtype="acquired">
+                            <p>Purchase, <date when="1896">1896</date>.</p>
+                        </provenance>
+
+
+                    </history>
+                </msDesc>
+                <!--  *************************************  <listBibl>  *********************************  -->
+                <listBibl>
+                    <bibl>
+                        <ptr type="rest-of-bibl" target="#CIL_XI"/>
+                        <biblScope unit="item">2337</biblScope>
+                    </bibl>
+                    <bibl>
+                        <ref type="external" target="https://www.metmuseum.org/art/collection/search/246266">Metropolitan Museum Web Entry</ref>
+                    </bibl>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <!--  *************************************  <encodingDesc>  ********************************* -->
+
+        <encodingDesc>
+
+                <xi:include
+                    href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+                    <xi:fallback>
+                        <p>Taxonomies for US Epigraphy controlled values</p>
+                    </xi:fallback>
+                </xi:include>
+
+        </encodingDesc>
+
+        <profileDesc> <!-- not used --> </profileDesc>
+
+
+        <!--  *************************************  <revisionDesc>  ********************************* -->
+    	<!-- Record all changes here -->
+
+        <revisionDesc>
+            <change when="2021-02-24" who="Itamar Levin">Transcription, translation, and
+                metadata</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+    <!--  *************************************  <facsimile>  *********************************  -->
+        <!-- Used to record images of an inscription.   -->
+
+    <facsimile>
+        <surface>
+            <desc/>
+            <graphic url="NY.NY.MMA.L.96.9.222aAndb.jpg"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="edition">
+            <ab>
+                <lb n="1"/><persName><name key="Lucius" type="praenomen"><expan><abbr>L</abbr><ex>uci</ex></expan></name> <name key="Gavius" type="gentilicium">Gavi</name> <name key="Luci filius" type="patronymic"><expan><abbr>L</abbr><ex>uci</ex></expan> <expan><abbr>f</abbr><ex>ili</ex></expan></name>
+                    <lb n="2"/><name key="Clemens" type="cognomen">Cle<hi rend="ligature">me</hi>ntis</name></persName>
+            </ab></div>
+            
+            <div type="translation">
+                <p>Of Lucius Gavius Clemens, son of Lucius.</p></div>
+
+            <div type="commentary">
+            <p></p></div>
+            
+
+            <div type="bibliography"> <xi:include href="http://library.brown.edu/usep_data/resources/titles.xml"> <xi:fallback> <p>US Ep bibliography</p> </xi:fallback> </xi:include> </div>
+
+        </body>
+    </text>
+</TEI>
