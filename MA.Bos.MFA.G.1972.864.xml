@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader><!-- testing1 -->
+      <fileDesc>
+         <titleStmt>
+            <title>MA.Bos.MFA.G.1972.864</title>
+            <author>Author</author>
+            <respStmt>
+               <resp>Translation</resp>
+               <name>Translator</name>
+            </respStmt>
+            <respStmt>
+               <resp>Commentary</resp>
+               <name>Commenter</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/include_publicationStmt.xml">
+               <xi:fallback>
+                  <p>The Publications Statement should appear here. (c) Brown University</p>
+               </xi:fallback>
+            </xi:include>
+            <idno type="USEpigraphy" xml:id="MA.Bos.MFA.G.1972.864">MA.Bos.MFA.G.1972.864</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <region>MA</region>
+                  <settlement>Bos</settlement>
+                  <institution>MFA</institution>
+                  <repository/>
+                  <idno>1972.864</idno>
+               </msIdentifier>
+               <msContents>
+                  <textLang mainLang="grc" otherLangs=""/>
+                  <msItem class="#funerary.epitaph #label">
+                     <p>epitaph identifying Philinna and Phanostratos</p>
+                  </msItem>
+               </msContents>
+               <!--  *************************************  <physDesc>  ********************************* -->
+               <physDesc>
+                  
+                  <!--  *************************************  <objectDesc>  *********************************  -->
+                  
+                  <objectDesc ana="#sculpture #instrumentum.vase">
+                     <supportDesc ana="#stone.marble">
+                        <support>
+                           <p> Pentelic marble grave marker in the shape of an oil flask
+                              (lekythos)</p>
+                           <dimensions type="surface" unit="cm">
+                              <height>51</height>
+                              <width>33</width>
+                              <depth>14</depth>
+                           </dimensions>
+                        </support>
+                        <condition ana="#complete.broken">
+                           <p/>
+                        </condition>
+                     </supportDesc>
+                     <!--  *************************************  <layoutDesc>  ********************************* -->
+                     <layoutDesc>
+                        <layout columns="0" writtenLines="1">
+                           <p/>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <!--  *************************************  <handDesc>  ********************************* -->
+                  
+                  <handDesc hands="1">
+                     <handNote ana="#inscribed"> "rather crudely cut" (MFA web entry)</handNote>
+                  </handDesc>
+                  
+                  <!--  *************************************  <decoDesc>  *********************************     -->
+                  <decoDesc>
+                     <decoNote>
+                        <p>image of an elderly, bearded man engaged in a farewell gesture with a
+                           seated woman, while a second woman stands to the left </p>
+                     </decoNote>
+                  </decoDesc>
+               </physDesc>
+               
+               <!--  *************************************  <history>  *********************************  -->
+               
+               <history>
+                  
+                  <summary>
+                     <rs/>  <!-- content can be "modern" or "modern-text". A blank value indicates that the inscription is ancient.  -->
+                  </summary>
+                  
+                  <origin>
+                     <date evidence="#archaeology" notBefore="-0370" notAfter="-0350">about 360
+                        BC</date>
+                     <placeName ref="europe.greece.athens">Athens</placeName>
+                  </origin>
+                  <provenance type="transferred" subtype="purchased">
+                     <p> purchased by <orgName role="buyer">MFA</orgName> from <orgName role="seller">Münzen und Medaillen, A.G.</orgName>, on <date when="1972">September 13, 1972</date></p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> by <date when="1972">1972</date>, with <orgName role="owner">Münzen und Medaillen, A.G.</orgName>, Malzgasse 25, Basel, <placeName>Switzerland</placeName> (said to come from an old Swiss collection)</p>
+                  </provenance>
+                  <provenance type="observed" subtype="recorded">
+                     <p> By <date when="1953">1953</date>: with <persName role="owner">Koutoulakis</persName> in <placeName>Paris</placeName></p>
+                  </provenance>
+                  
+                  
+               </history>
+            </msDesc>
+            <listBibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#CAT_3"/>
+                  <biblScope unit="item">265</biblScope>
+               </bibl>
+               <bibl>
+                  <ptr type="rest-of-bibl" target="#SEG_28"/>
+                  <biblScope unit="item">no. 352</biblScope>
+               </bibl>
+               <bibl>
+                  <ref type="external"
+                     target="https://collections.mfa.org/objects/151078/grave-marker-in-the-form-of-an-oil-flask-lekythos?ctx=d74061db-e4da-45b4-a456-640829f9e5db&amp;idx=0"
+                     >MFA web entry</ref>
+               </bibl>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                      href="http://library.brown.edu/usep_data/resources/include_taxonomies.xml">
+            <xi:fallback>
+               <p>Taxonomies for US Epigraphy controlled values</p>
+            </xi:fallback>
+         </xi:include>
+      </encodingDesc>
+      <profileDesc/>
+      <revisionDesc>
+         <change when="2010-09-29" who="Center for Digital Scholarship">Converted to September 2009 EpiDoc</change>
+         <change when="2011-05-13" who="Elli Mylonas">More tweaks for bib only inscriptions</change>
+         <change when="2023-07-21" who="Jean Wanlass">added metadata, transcription,
+            translation</change>
+         <change when="2023-07-27" who="Jean Wanlass">minor corrective edits</change>
+      </revisionDesc>
+   </teiHeader>
+   <!--  *************************************  <facsimile>  *********************************  -->
+   <!-- Used to record images of an inscription.   -->
+   
+   <facsimile>
+      <surface>
+         <desc/>
+         <graphic url="MA.Bos.MFA.G.1972.864.jpg"/>
+      </surface>
+   </facsimile>
+   
+   <text>
+      <body>
+         <div type="edition">
+            <ab>
+               <lb n="1"/>Φίλιννα Φανόστρατος
+            </ab></div>
+         
+         <div type="translation">
+            <p>Phillina, Phanostratos</p></div>
+         
+         <div type="commentary">
+            <p></p></div>
+         <div type="bibliography">
+            <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                         href="http://library.brown.edu/usep_data/resources/titles.xml">
+               <xi:fallback>
+                  <p>US Epigraphybibliography</p>
+               </xi:fallback>
+            </xi:include>
+         </div>
+      </body>
+   </text>
+</TEI>
